@@ -10,8 +10,8 @@ export class AppComponent implements OnInit {
 
   title = 'app';
 
-  private user = '28aebd39-38ac-4ce9-ac59-7f69f2591574-bluemix';
-  private pwd = '8e9a1b8b2212aa86dc619824f9679159a6cd860fb9443bb296bd49c5c6437be0';
+  private user = 'xxxxxxxxxxx-bluemix';
+  private pwd = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
   public messages: Array<any>;
   public cities: Array<any>;
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
 
-    this.database.sync('https://' + this.user + ':' + this.pwd + '@28aebd39-38ac-4ce9-ac59-7f69f2591574-bluemix.cloudant.com/locosporalva');
+    this.database.sync('https://' + this.user + ':' + this.pwd + '@xxxxxxxxxxxxxxxxx-bluemix.cloudant.com/xxxxxx');
     this.database.getChangeListener().subscribe(data => {
       for (let i = 0; i < data.change.docs.length; i++) {
         this.zone.run(() => {
